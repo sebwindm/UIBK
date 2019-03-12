@@ -1,0 +1,243 @@
+
+/* Cards
+----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Structure: One card-grid contains X card-wraps, one card-wrap contains one card*/
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Outer structure where card wraps get placed in*/
+
+.card-grid {
+	width: 100%;
+}
+
+.card-grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* Card wrap placed inside card grid*/
+
+.card-wrap {
+	float: left;
+	width: 100%;
+	padding: 5px;
+	height: 500px;
+}
+
+@media (min-width: 500px) {
+	.card-wrap {
+		width: 50%;
+	}
+}
+
+@media (min-width: 720px) {
+	.card-wrap {
+		width: 33%;
+	}
+}
+
+/* Cards placed inside card-wrap */
+
+.card {
+	/* Add shadows to create the "card" effect */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+	transition: 0.3s;
+	border-radius: 5px;
+	/* 5px rounded corners */
+	padding: 2px 16px;
+	background: white;
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+
+/* On mouse-over, add a deeper shadow */
+
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card>div {
+	padding: 0 1em;
+}
+
+.standard-button {
+	background-color: #003362;
+	border: none;
+	color: white;
+	padding: 10px 24px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	border: 2px solid #aaa;
+}
+
+.standard-button:hover {
+	background-color: orange;
+	color: white;
+	border: 2px solid #003362;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.standard-button-greyed-out {
+	background-color: #d9d9d9;
+	border: none;
+	color: white;
+	padding: 10px 24px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	border: 2px solid #aaa;
+}
+.apply-color-button{
+	background-color: #003362;
+	border: none;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	border: 2px solid #aaa;
+}
+.apply-color-button:hover {
+	background-color: orange;
+	color: white;
+	border: 2px solid #003362;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.color-chooser{
+	border-radius: 5px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	padding: none;
+	background-color: white;
+}
+.close-button{
+	padding: 5px 10px;
+	margin-left: : 50px;
+  display: inline-block;
+	background: #003362;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	border-radius: 5px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	border: 2px solid #aaa;
+}
+
+.close-button:hover {
+    background-color: orange;
+    color: white;
+}
+.close-idea-button{
+	padding: 1px 2px;
+	margin-right: 2px;
+  	display: inline-block;
+	background: #003362;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	border-radius: 5px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	border: 2px solid #aaa;
+	float:right;
+}
+.close-idea-button:hover {
+    background-color: orange;
+    color: white;
+}
+.button-container{
+	padding-left: 5px;
+	padding-bottom: 2px;
+		display: inline-block;
+}
+@media (min-width: 720px) {
+	.container-to-drop-idea {
+		width: 25%;
+		float: left;
+		display: inline-block;
+	}
+}
+@media (max-width: 719px) {
+	.container-to-drop-idea {
+		width: 50%;
+		float: left;
+		display: inline-block;
+	}
+}
+.drop-off-area{
+	padding: 20px 10px;
+	border: 2px solid #003362;
+	min-height: 350px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+	transition: 0.3s;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+.draggable-idea {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	/* Add shadows to create the "card" effect */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+	transition: 0.3s;
+	border-radius: 5px;
+	/* 5px rounded corners */
+	padding: 2px 30px 30px 30px;
+	background: white;
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+#container-for-new-ideas {
+	min-height: 350px;
+	padding: 10px 0px 10px 10px;
+	border: 1px solid #003362;
+	width: 50%;
+	display: inline-block;
+	/* text-align: center; */
+}
+.container-for-category-name{
+	min-height: 70px;
+	padding: 5px;
+	font-weight: bold;
+	/* padding-bottom: 100px; */
+}
+#container-for-all-categories{
+	/* display: inline-block; */
+
+}
+.wrapper-for-categories-container{
+		text-align: center;
+}
+.idea-name{
+	/* float:left; */
+}
+.idea-button-container{
+	float:right;
+}

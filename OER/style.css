@@ -1,0 +1,67 @@
+body {
+    font-family: Petrona !important;
+}
+
+/* Text paragraphs */
+p {
+	line-height: 1.6;
+}
+
+/* p regular*/
+.regular {
+	width: 100%;
+	line-height: 1.5;
+	margin-bottom: 15px;
+	float: left;
+	text-align: justify;
+}
+
+/* p form*/
+.form {
+	width: 100%;
+	line-height: 1.5;
+	margin: 6px 0px 2px 0px;
+	float: left;
+	text-align: justify;
+}
+
+/* p definition*/
+.definition {
+	border-left: 6px solid #003362;
+	background-color: #e0ecff;
+	padding: 15px;
+	width: 100%;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	float: left;
+	text-align: justify;
+}
+.frame {
+	width: 100%;
+	background-color: #efeff2;
+	padding: 20px;
+	box-shadow: 3px 3px 10px #888888;
+	margin: 10px 0px 30px 0px;
+	float: left;
+}
+.standard-button {
+  background-color: #003362;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border: 2px solid #aaa;
+}
+
+.standard-button:hover {
+  background-color: orange;
+  color: white;
+  border: 2px solid #003362;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}

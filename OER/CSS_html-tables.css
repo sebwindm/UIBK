@@ -1,0 +1,41 @@
+table {
+	width:80%;
+	max-width: 70%;
+	border-collapse: collapse;
+  text-align: left;
+}
+th, td {
+	border: 1px solid #003362;
+	padding: 5px;
+}
+td {
+	max-width: 20%;
+}
+.bold-cell{
+	font-weight: bold;
+}
+
+#hidden-table-cell {
+	display:hidden;
+	border: 0px;
+}
+#blue-color-cell {
+	background-color: #003362;
+  color: white;
+}
+#red-color-cell {
+	background-color: red;
+  color: white;
+}
+#green-color-cell {
+	background-color: green;
+  color: white;
+}
+#orange-color-cell {
+	background-color: orange;
+  color: white;
+}
+#yellow-color-cell {
+	background-color: yellow;
+  color: black;
+}
