@@ -1,0 +1,94 @@
+/* Cards
+----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Structure: One card-grid contains X card-wraps, one card-wrap contains one card*/
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Outer structure where card wraps get placed in*/
+
+.card-grid {
+	width: 100%;
+}
+
+.card-grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* Card wrap placed inside card grid*/
+
+.card-wrap {
+	float: left;
+	width: 100%;
+	padding: 5px;
+	height: 500px;
+}
+
+@media (min-width: 500px) {
+	.card-wrap {
+		width: 50%;
+	}
+}
+
+@media (min-width: 720px) {
+	.card-wrap {
+		width: 33%;
+	}
+}
+
+/* Cards placed inside card-wrap */
+
+.card {
+	/* Add shadows to create the "card" effect */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+	transition: 0.3s;
+	border-radius: 5px;
+	/* 5px rounded corners */
+	padding: 2px 16px;
+	background: white;
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+
+/* On mouse-over, add a deeper shadow */
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card>div {
+	padding: 0 1em;
+}
+
+.card-button {
+	background-color: #003362;
+	border: none;
+	color: white;
+	padding: 10px 24px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	border: 2px solid #aaa;
+}
+
+.card-button:hover {
+	background-color: orange;
+	color: white;
+	border: 2px solid #003362;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
