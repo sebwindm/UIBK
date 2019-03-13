@@ -13,7 +13,7 @@ $dbName = "360";
 } else if($localTestingVariable==2){
 	$dbServername = "localhost";
 	$dbUsername = "root";
-	$dbPassword = "Nk94CFuF";
+	$dbPassword = "removed";
 	$dbName = "dreilaenderbank";
 }
 
